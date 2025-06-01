@@ -1,11 +1,17 @@
 # General Prerequisites: 
 
 ## Backend : 
-Python 3.x must be installed recommended (Python 3.12.4)
-pip and git should be available in your system path
+1. Python 3.x must be installed recommended (Python 3.12.4)
+2. pip and git should be available in your system path
 
-## Fronend : 
-Node js Latest recommended (v22.15.0)
+## Fronend :
+1. Node js Latest recommended (v22.15.0)
+2. Install Angular CLI
+```
+npm install -g @angular/cli
+```
+
+
 
 
 # How to run the backend : 
@@ -34,4 +40,16 @@ flask run
 ```
 
 # How to run Frontend : 
-
+## 📂 Step-by-Step (All OS)
+### Step 1: Navigate to the frontend folder
+```
+cd pdf-to-html-converter/frontend
+```
+### Step 2: Install dependencies
+```
+npm install --f
+```
+### Step 3: Run the Angular development server
+```
+npm start
+```
