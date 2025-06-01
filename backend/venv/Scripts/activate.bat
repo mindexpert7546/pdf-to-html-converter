@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Kundan Kumar\Desktop\pdf-to-html-project\backend\venv
+set VIRTUAL_ENV=C:\Users\Kundan Kumar\Documents\LearnNova Projects\pdf-to-html-converter\backend\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
