@@ -11,6 +11,11 @@
 npm install -g @angular/cli
 ```
 
+## Screenshot: 
+![image](https://github.com/user-attachments/assets/8cd58967-17b5-491f-8bb3-2ebcae9f3ded)
+
+![image](https://github.com/user-attachments/assets/a4d4d4de-5dac-4b6a-aa0c-d81aaf7f07f8)
+
 
 
 
