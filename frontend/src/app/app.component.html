@@ -1,2 +1,32 @@
-<input type="file" (change)="onFileChange($event)">
-<button (click)="uploadAndConvert()">Convert to HTML</button>
+<div class="p-10 max-w-xl mx-auto">
+  <div class="p-10 max-w-xl mx-auto">
+  <h2 class="text-2xl font-bold mb-4">PDF to HTML Converter</h2>
+  
+  <input type="file" (change)="onFileChange($event)" accept="application/pdf"
+         class="mb-4 border p-2 w-full" />
+
+  <button (click)="uploadAndConvert()" 
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          [disabled]="!selectedFile || isLoading">Convert to HTML</button>
+
+  <!-- Loader -->
+  <div *ngIf="isLoading" class="mt-6 flex items-center space-x-3 text-blue-600">
+    <svg class="animate-spin h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+              stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor"
+            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/>
+    </svg>
+    <span class="font-medium">Converting PDF to HTML...</span>
+  </div>
+
+  <!-- Converted HTML -->
+  <div class="mt-6" *ngIf="convertedHTML && !isLoading">
+    <h3 class="text-xl font-semibold mb-2">Converted HTML Preview:</h3>
+    <div class="border p-4 overflow-auto max-h-[500px] bg-gray-50" [innerHTML]="convertedHTML"></div>
+  </div>
+</div>
+
+</div>
+
